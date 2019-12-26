@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -20,14 +21,14 @@
                     <li class="site-list__item"><a href="#">HTML Academy</a></li>
                 </ul>
             </nav>
-            <button class="navigation__close-icon navigation__close-icon_cross" type="button">Закрыть меню</button>
+            <button class="navigation__close-icon navigation__close-icon_cross" type="button"></button>
         </div>
 
         <div class="page-header__logo-and-hamburger">
             <a class="page-header__logo">
-                <img class="page-header__logo page-header__logo-image" src="https://via.placeholder.com/102x83" alt="Логотип города Седоны" width="102" height="83">
+                <img class="page-header__logo page-header__logo-image" src="../img/logo-sedona-mobile.svg" alt="Логотип города Седоны" width="102" height="83">
             </a>
-            <button class="page-header__toggle page-header__toggle-hamburger" type="button" aria-label="Открыть меню">Открыть меню</button>
+            <button class="page-header__toggle page-header__toggle-hamburger" type="button" aria-label="Открыть меню"></button>
         </div>
 
     </header>
@@ -50,15 +51,17 @@
 
         <section class="five-reasons-list">
             <div class="five-reasons-list__wrapper">
+                
                 <div class="five-reasons-list__advantage advantage-block">
-                    <div class="advantage-block__text-block">
+                    <div class="advantage-triangle">&nbsp;</div>
+                    <div class="advantage-block__text-block">    
                         <h3 class="advantage-block__title">Настоящий городок</h3>
                         <p class="advantage-block__number">– №1 –</p>
                         <p class="advantage-block__reason">Седона - не аттракцион для туристов,
                             там течет своя жизнь
                         </p>
                     </div>
-                    <div class="advantage-block__image"><img src="https://via.placeholder.com/320x260" alt="Еще один красивый вид города Седоны" width="320" height="260"></div>
+                    <div class="advantage-block__image"><img src="../img/main-city-mobile@1x.jpg" alt="Еще один красивый вид города Седоны" width="320" height="260"></div>
                 </div>
 
                 <div class="five-reasons-list__additional-list additional-advantages">
@@ -85,7 +88,7 @@
                 </div>
 
                 <div class="five-reasons-list__advantage advantage-block">
-                    <div class="advantage-block__image"><img src="https://via.placeholder.com/320x260" alt="И еще один красивый вид города Седоны" width="320" height="260"></div>
+                    
                     <div class="advantage-block__text-block">
 
                         <h3 class="advantage-block__title">Там есть мост дьявола</h3>
@@ -97,40 +100,62 @@
                             вы осмелитесь</p>
 
                     </div>
+                    <div class="advantage-block__image"><img src="../img/main-bridge-mobile@1x.jpg" alt="И еще один красивый вид города Седоны" width="320" height="260"></div>
 
                 </div>
 
 
-                <div class="five-reasons-list__advantage3 advantage-block">
-                    <div class="advantage-block__text-block">
+                <div class="five-reasons-list__advantage3-5 advantage-block3-5">
+                    <div class="five-reasons-list__advantage3 advantage-block">
 
                         <h3 class="advantage-block__title">Небольшая площадь</h3>
                         <p class="advantage-block__number">– №3 –</p>
                         <p class="advantage-block__reason">Все достопримечательности находятся очень близко</p>
-
+                        
                     </div>
-
+                    <hr>
                     <div class="five-reasons-list__advantage4 advantage-block">
 
                         <h3 class="advantage-block__title">Красивая дорога</h3>
                         <p class="advantage-block__number">– №4 –</p>
                         <p class="advantage-block__reason">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-
+                        
                     </div>
-
-                    <div class="five-reasons-list__advantage4 advantage-block">
+                    <hr>
+                    <div class="five-reasons-list__advantage5 advantage-block">
 
                         <h3 class="advantage-block__title">Мало туристов</h3>
                         <p class="advantage-block__number">– №5 –</p>
                         <p class="advantage-block__reason">Большинство едет в Гранд Каньон и толпится там</p>
-
+                        
                     </div>
+                    
                 </div>
             </div>
 
         </section>
 
         <!-- Здесь будут форма и карта -->
+
+        <section class="search-and-map">
+            <div class="search-and-map__wrapper">
+
+                <div class="search-and-map__introduction introduction">
+                    <h2 class="introduction__title">Заинтересовались?</h2>
+                    <p class="introduction__cta">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+                </div>
+
+                <div class="seacrh-and-map__button button">
+                    <button class="button__search-button" type="submit" class="submit-button">Найти гостиницу</button>
+                </div>
+
+                <div class="search-and-map__map map">
+                    <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac2a16f7b51e001d73a2743bc1ffe330d97e1e5ab3c9b54226ff3fa62d33681b1&amp;source=constructor" width="320" height="350"></iframe>
+                    <img class="map__img" src="../img/bg-map-mobile@1x.jpg" alt="Карта города Седоны" width="320" height="350">
+                </div>
+
+            </div>
+        </section>
 
     </main>
 
@@ -139,18 +164,18 @@
         <div class="main-footer__wrapper">
             <div class="main-footer__hashtag"><a href="#">#Visitsedona</a></div>
             <div class="main-footer__social social">
-                <ul class="social-btns__list">
-                    <li class="social__item"><a class="social__link social__link_tw" href="#"><img src="https://via.placeholder.com/46x48" alt="Логотип Twitter" width="46" height="48"></a></li>
-                    <li class="social__item"><a class="social__link social__link_fb" href="#"><img src="https://via.placeholder.com/46x48" alt="Логотип Facebook" width="46" height="48"></a></li>
-                    <li class="social__item"><a class="social__link social__link_yt" href="#"><img src="https://via.placeholder.com/46x48" alt="Логотип YouTube" width="46" height="48"></a></li>
+                <ul class="social__list">
+                    <li class="social__item"><a class="social__link social__link_tw" href="#"><img src="../img/icon-twitter.svg" alt="Логотип Twitter" width="18" height="14"></a></li>
+                    <li class="social__item"><a class="social__link social__link_fb" href="#"><img src="../img/icon-facebook.svg" alt="Логотип Facebook" width="9" height="18"></a></li>
+                    <li class="social__item"><a class="social__link social__link_yt" href="#"><img src="../img/icon-youtube.svg" alt="Логотип YouTube" width="20" height="14"></a></li>
                 </ul>
             </div>
             <div class="main-footer__footer-copyright copyright">
                 <ul class="copyright__list">
                     <li class="copyright__item">
-                        <p class="copyright__text">Website by</p>
+                        <p class="copyright__text">Разработано</p>
                     </li>
-                    <li class="copyright__item_logo"><a class="copyright__link" href="https://htmlacademy.ru">Html academy</a></li>
+                    <li class="copyright__item_logo"><a class="copyright__link" href="https://htmlacademy.ru"></a></li>
                 </ul>
             </div>
         </div>
